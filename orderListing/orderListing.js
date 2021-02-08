@@ -70,43 +70,7 @@ checkedBoxes.addEventListener('click',(e)=>{
 countpara.innerText=count;
 }
 
-
-
-
-
-
-   
-//    if(selectedCheckBox.New===true && selectedCheckBox.Packed===true && selectedCheckBox.InTransit===true && selectedCheckBox.Delivered===true){
-//         for(var i=0;i<orders;i++){
-//             var cards = document.getElementById(orders[i].id)
-//             cards.style.display=""
-//         }
-        
-    
-//     }else if(selectedCheckBox.New===false && selectedCheckBox.Packed===false && selectedCheckBox.InTransit===false && selectedCheckBox.Delivered===false){
-//         console.log(orders)
-//         for(var i =0; i<orders.length;i++){
-//                 var cards = document.getElementById(orders[i].id)
-//                 cards.style.display="none"
-//             }
-            
-     
-//     }else if()
-
-
-
-
 })
-
-
-// }else  if(selectedCheckBox.New===false && selectedCheckBox.Packed===false && selectedCheckBox.InTransit===false && selectedCheckBox.Delivered===false){
-//     console.log(orders)
-//     for(var i =0; i<orders.length;i++){
-//         if(orders[i].orderStatus==="New" ){
-//            console.log(orders[i])
-//          table.appendChild(cards(orders[i]))
-//         }
-//     }
 
 
 function cards(data){
@@ -164,25 +128,3 @@ return tableRow
 
 
 
-// // Active class for Orders, Products, Users
-// var header = document.getElementById('nav-items')
-// var items = document.getElementsByClassName("item");
-// var textsColor =document.getElementsByClassName('tag-anc')
-// for (let i = 0; i < items.length; i++) {
-//     items[i].addEventListener("click", function() {
-//   let current = document.getElementsByClassName("active");
-//   current[0].className = current[0].className.replace(" active", "");
-//   this.className += " active";
-
-//   });
-// }
-// for (let i = 0; i < textsColor.length; i++) {
-//     textsColor[i].addEventListener("click", function() {
-//   let current = document.getElementsByClassName(" text");
-//   current[0].className = current[0].className.replace(" text", "");
-  
-//   this.className += " text";
-
-
-//   });
-// }
