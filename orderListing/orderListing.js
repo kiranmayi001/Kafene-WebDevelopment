@@ -1,8 +1,23 @@
-  
+let   mainSection=document.getElementById('main-page')
     var table = document.getElementById("table");
 var orders;
 // console.log(orders)
+var ancTag=document.getElementById('anc-tag');
 
+if(JSON.parse(localStorage.getItem("isLoggedIn"))==false){
+    mainSection.style.display="none"
+    // window.location.href="../LoginPage/LoginPage.html"
+   
+//    return;
+}  
+ 
+// window.addEventListener()
+
+ancTag.addEventListener('click',function(){
+    localStorage.setItem("isLoggedIn", false)
+    // mainSection.style.display="none"
+    window.location.href="../LoginPage/LoginPage.html"
+})
 
 
 fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders")

@@ -1,11 +1,19 @@
 let countpara=document.getElementById('num');
-let count=0;      
+let count=0;    
+var ancTag=document.getElementById('anc-tag');
+let mainSection=document.getElementById('main-page')
+
+if(JSON.parse(localStorage.getItem("isLoggedIn"))==false){
+    mainSection.style.display='none'
+    // window.location.href="../LoginPage/LoginPage.html"
+//    return;
+}  
  
 
-  var toLogout = document.getElementById("anc-tag")
-  toLogout.addEventListener("click",()=>{
-      localStorage.setItem("isLoggedIn", false)
-  })
+//   var toLogout = document.getElementById("anc-tag")
+//   toLogout.addEventListener("click",()=>{
+//       localStorage.setItem("isLoggedIn", false)
+//   })
 
 /////////////////////////// target name
 
@@ -40,6 +48,10 @@ if(loginStatus){
  
  
  console.log(products)
+ ancTag.addEventListener('click',function(){
+    localStorage.setItem("isLoggedIn", false)
+    window.location.href="../LoginPage/LoginPage.html"
+})
  // select Objects
  var select={
      expiryDate:true,

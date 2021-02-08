@@ -1,5 +1,17 @@
 var userListData;
 var tabel = document.getElementById("table")
+var ancTag=document.getElementById('anc-tag');
+let mainSection=document.getElementById('main-page')
+
+if(JSON.parse(localStorage.getItem("isLoggedIn"))==false){
+   
+    mainSection.style.display='none'
+    // window.location.href="../LoginPage/LoginPage.html"
+    // setTimeout
+    // location.reload();
+   
+}
+
 fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users")
 .then(response=>{
     // console.log(response)
@@ -15,6 +27,12 @@ fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users")
 })
 .catch(err=>{
     console.log("error")
+})
+
+
+ancTag.addEventListener('click',function(){
+    localStorage.setItem("isLoggedIn", false)
+    window.location.href="../LoginPage/LoginPage.html"
 })
 
 var searchInput = document.getElementById("search-input");

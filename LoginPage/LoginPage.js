@@ -5,6 +5,7 @@ var mainForm = document.getElementById("form")
    var inputName = document.getElementById("input-name")         
 var inputPassword = document.getElementById("input-password")
 
+
 mainForm.addEventListener('submit',(e)=>{
     e.preventDefault();
 // console.log(inputName.value)
@@ -12,10 +13,15 @@ mainForm.addEventListener('submit',(e)=>{
 if(inputName.value===inputPassword.value){
     alert("Login Successful")
     localStorage.setItem("isLoggedIn", true)
+    fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/login",{
+      method:"POST",
+      body:JSON.stringify({username:inputName.value,password:inputPassword.value}),
+      headers:{"Content-type":"application/json,charset:UTF-8"}
+    })
     window.location.href="../orderListing/orderListing.html"
     
 }else{
-    alert("Login Failed")
+    alert( "Please enter valid credentials!")
     return
 }
 })
