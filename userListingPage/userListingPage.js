@@ -3,13 +3,8 @@ var tabel = document.getElementById("table")
 var ancTag=document.getElementById('anc-tag');
 let mainSection=document.getElementById('main-page')
 
-if(JSON.parse(localStorage.getItem("isLoggedIn"))==false){
-   
-    mainSection.style.display='none'
-    // window.location.href="../LoginPage/LoginPage.html"
-    // setTimeout
-    // location.reload();
-   
+if(JSON.parse(localStorage.getItem("isLoggedIn"))==false){ 
+    mainSection.style.display='none' 
 }
 
 fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users")
@@ -42,19 +37,7 @@ searchInput.addEventListener("keyup",(e)=>{
 
     if(e.target.value.length<2){
         alert("Please enter at least 2 characters")
-    //     for(let i=0; i<userListData.length;i++){
-    //         // if(userListData[i].fullName.toLowerCase().includes(e.target.value.toLowerCase())){
-    //           let dataId = document.getElementById(userListData[i].id);
-    //           dataId.style.display=""
-    //         // }
-            
-    // }
-    // return
 }
-
-    // if(e.target.value.length<2){
-    //    alert("Please enter at least 2 characters")
-    // }
     else{
          for(let i=0; i<userListData.length;i++){
             if(userListData[i].fullName.toLowerCase().includes(e.target.value.toLowerCase())){
