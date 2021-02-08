@@ -13,24 +13,24 @@ mainForm.addEventListener('submit',(e)=>{
 if(inputName.value===inputPassword.value){
   
    
-    fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/login",{
-      method:"POST",
-      body:JSON.stringify({username:"Qaifi",password:'Password'}),
-      headers:{"Content-type":"application/json,charset:UTF-8"}
-    })
-    .then(response=>{
-      // console.log(response.json())
-      if(JSON.parse(response).status==200){
+    // fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/login",{
+    //   method:"POST",
+    //   body:JSON.stringify({username:"Qaifi",password:'Password'}),
+    //   headers:{"Content-type":"application/json,charset:UTF-8"}
+    // })
+    // .then(response=>{
+    //   // console.log(response.json())
+    //   if(JSON.parse(response).status==200){
         alert("Login Successful")
         localStorage.setItem("isLoggedIn", true)
         
         window.location.href="../orderListing/orderListing.html"
-      }
-      else alert("Login Failed")
-    })
-    .catch(err=>{
-      alert("Login Failed")
-    })
+    //   }
+    //   // else alert("Login Failed")
+    // })
+    // // .catch(err=>{
+    // //   alert("Login Failed")
+    // // })
     
     
 }else{
