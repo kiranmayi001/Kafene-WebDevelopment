@@ -11,14 +11,27 @@ mainForm.addEventListener('submit',(e)=>{
 // console.log(inputName.value)
 // console.log(inputPassword.value)
 if(inputName.value===inputPassword.value){
-    alert("Login Successful")
-    localStorage.setItem("isLoggedIn", true)
+  
+   
     fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/login",{
       method:"POST",
-      body:JSON.stringify({username:inputName.value,password:inputPassword.value}),
+      body:JSON.stringify({username:"Qaifi",password:'Password'}),
       headers:{"Content-type":"application/json,charset:UTF-8"}
     })
-    window.location.href="../orderListing/orderListing.html"
+    .then(response=>{
+      // console.log(response.json())
+      if(JSON.parse(response).status==200){
+        alert("Login Successful")
+        localStorage.setItem("isLoggedIn", true)
+        
+        window.location.href="../orderListing/orderListing.html"
+      }
+      else alert("Login Failed")
+    })
+    .catch(err=>{
+      alert("Login Failed")
+    })
+    
     
 }else{
     alert( "Please enter valid credentials!")
