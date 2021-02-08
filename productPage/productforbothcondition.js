@@ -5,17 +5,8 @@ let mainSection=document.getElementById('main-page')
 
 if(JSON.parse(localStorage.getItem("isLoggedIn"))==false){
     mainSection.style.display='none'
-    // window.location.href="../LoginPage/LoginPage.html"
-//    return;
 }  
  
-
-//   var toLogout = document.getElementById("anc-tag")
-//   toLogout.addEventListener("click",()=>{
-//       localStorage.setItem("isLoggedIn", false)
-//   })
-
-/////////////////////////// target name
 
 let loginStatus = localStorage.getItem("isLoggedIn")
 console.log(loginStatus)
