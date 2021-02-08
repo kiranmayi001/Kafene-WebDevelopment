@@ -42,19 +42,20 @@ searchInput.addEventListener("keyup",(e)=>{
 
     if(e.target.value.length<2){
         alert("Please enter at least 2 characters")
-        for(let i=0; i<userListData.length;i++){
-            // if(userListData[i].fullName.toLowerCase().includes(e.target.value.toLowerCase())){
-              let dataId = document.getElementById(userListData[i].id);
-              dataId.style.display=""
-            // }
+    //     for(let i=0; i<userListData.length;i++){
+    //         // if(userListData[i].fullName.toLowerCase().includes(e.target.value.toLowerCase())){
+    //           let dataId = document.getElementById(userListData[i].id);
+    //           dataId.style.display=""
+    //         // }
             
-    }
-    return
+    // }
+    // return
 }
 
-    if(e.target.value.length<2){
-       alert("Please enter at least 2 characters")
-    }else{
+    // if(e.target.value.length<2){
+    //    alert("Please enter at least 2 characters")
+    // }
+    else{
          for(let i=0; i<userListData.length;i++){
             if(userListData[i].fullName.toLowerCase().includes(e.target.value.toLowerCase())){
               let dataId = document.getElementById(userListData[i].id);
