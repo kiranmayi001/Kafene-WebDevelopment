@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="./product.css"/>
+</head>
+<body>
+
+    <topbar id="top-bar">
+
+        <div id="main-logo">
+            
+        <img id="logo" src="../assets/logo.58169365.png" alt=""/>
+        <h1>Kafene</h1>
+        </div>
+
+        <nav id="nav-items">
+            <span class="item"><a class="tag-anc" href="../orderListing/orderListing.html">orders</a></span>
+            <span class="item active"><a class="tag-anc text" href="../productPage/product.html">Product</a></span>
+            <span class="item"><a class="tag-anc" href="../userListingPage/userListingPage.html">Users</a></span>
+        </nav>
+        <p id="log-out"><a id="anc-tag" href="../LoginPage/LoginPage.html" >Logout</a></p>
+    </topbar>
+         
+         <main id="main-page">
+
+             <section id="left-section">
+            
+                <div id="left-wrapper">
+                 <h1 id="product">Products</h1>
+                 <p id="filters">Filters</p>
+                 <p id="count">count: <span id="num">100</span> </p>
+                
+                 <div id="checked-boxes">
+                    <input type="checkbox" name="expiryDate" id="expiry" checked/><span>Expired</span><br>
+                    <input id="low-stock" type="checkbox" name="stock" checked /><span>Low Stock</span>
+                 </div>
+                
+                </div>
+
+             </section>
+
+             <section id="right-section">
+
+                <div id="right-wrapper">
+                   <table id="table">
+                       <tr id="table-row" >
+                           <td class="bold id" >ID</td>
+                           <td class="bold product-name">Product Name</td>
+                           <td class="bold product-brand">Product Brand</td>
+                           <td class="bold expiry-date">Expiry Date</td>
+                           <td class="bold unit-price">Unit Price</td>
+                           <td class="bold stock">Stock</td>
+                    </tr>
+
+                    <!-- <tr id="table-row" >
+                        <td class="id ">56104-020</td>
+                        <td class="product-name ">Miconazole Nitrate</td>
+                        <td class="product-brand">Premier Brands of America Inc.</td>
+                        <td class="expiry-date">14 Aug, 2012</td>
+                        <td class="unit-price">$993.01</td>
+                        <td class="stock">725</td>
+                 </tr> -->
+                 
+                    <!-- <tr id="table-row" >
+                        <td class="id ">56104-020</td>
+                        <td class="product-name ">Miconazole Nitrate</td>
+                        <td class="product-brand">Premier Brands of America Inc.</td>
+                        <td class="expiry-date">14 Aug, 2012</td>
+                        <td class="unit-price">$993.01</td>
+                        <td class="stock">725</td>
+                 </tr> -->
+                   </table>
+                </div>
+
+             </section>
+            
+
+         </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./productforbothcondition.js"></script>
+</body>
+</html>

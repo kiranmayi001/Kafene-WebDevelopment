@@ -1,0 +1,246 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    background-color:rgb(246,247,251) ;
+    /* sc */
+}
+#top-bar{
+    display:flex;
+    box-shadow:2px 2px 2px #D6D6D7;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: #FFFFFF;
+    /* margin-bottom: 70px; */
+}
+
+#main-logo{
+    display:flex;
+    align-items: center;
+    margin-left:55px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+#main-logo h1{
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo{
+    width:30px;
+    height:30px;
+    margin-right:5px;
+}
+
+#log-out{
+    margin-right:25px;
+}
+
+#nav-items{
+    margin-right:800px;
+}
+
+.item{
+    margin-left:5px;
+    margin-right:5px;
+    font-weight: 550;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    /* border:1px solid black; */
+    padding-bottom: 16px;
+}
+
+
+.tag-anc{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #868686;
+    font-weight: 600;
+  
+}
+
+.active{
+    color: #20B883 !important;
+    border-bottom: 2px solid #20B883;
+
+  
+}
+.text{
+    color: #20B883 !important;
+}
+
+
+
+
+
+
+#main-page{
+    margin-top:70px;
+    width:100%;
+    /* height:100vh; */
+    background-color: #F6F7FB;
+    display: flex;
+}
+
+
+#left-section{
+    width:20%;
+    /* height:100vh; */
+    /* background-color:#F ; */
+}
+
+#left-wrapper{
+    margin: 25px;
+    margin-left:110px
+}
+.cardColor{
+    background-color: white;
+ border-bottom: 4px solid #F6F7FB;
+}
+#product{
+    /* font-weight:600; */
+    color: black;
+
+
+}
+
+#filters{
+    /* font-weight: 600; */
+    color: black;
+    
+}
+
+
+
+
+
+#right-section{
+    width:80%;
+    /* height:100; */
+   
+
+}
+
+#right-wrapper{
+    width:85%;
+    height:80%;
+    /* border:1px solid black; */
+    /* margin-top:300px; */
+    /* justify-content: start; */
+    /* background-color: red; */
+    /* padding-left: 150px; */
+    margin-top: 100px;
+    margin-right:30px;
+    box-sizing: border-box;
+}
+
+#table{
+    /* border:1px solid black; */
+    border-collapse: collapse;
+    /* border-spacing: 100px; */
+    /* width:500px; */
+}
+.table-row{
+    background-color: white;
+}
+/* .table-head{
+    border: 1px solid black;
+    width:50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border:1px solid black;
+    
+} */
+
+.id{
+    width:100px;
+    /* border:1px solid black; */
+    padding-left: 0;
+    padding:12px 24px;
+    font-size: 14px;
+    /* font-weight: 600; */
+    color: #8C8E8C;
+}
+.product-name{
+    width:400px;
+    /* border:1px solid black; */
+    padding:12px 24px;
+    font-size: 14px;
+    color: #333333;
+    /* font-weight: 600; */
+}
+.product-brand{
+    width:650px;
+    /* border:1px solid black; */
+    padding:12px 24px;
+    font-size: 14px;
+    /* font-weight: 600; */
+    color: #8C8E8C;
+}
+.expiry-date{
+    width:350px;
+    /* border:1px solid black; */
+    padding:12px 24px;
+    font-size: 14px;
+    color: #333333;
+    /* font-weight: 600; */
+}
+
+.unit-price{
+    width:70px;
+    /* border:1px solid black; */
+    padding:12px 24px;
+    /* font-weight: 600; */
+    font-size: 14px;
+    font-size: 14px;
+    color: #8C8E8C;
+}
+.stock{
+    width:107px;
+    /* border:1px solid black; */
+    padding:12px 24px;
+    /* font-weight: 600; */
+    font-size: 14px;
+    color: #8C8E8C;
+}
+.bold{
+    font-weight: bolder;
+    font-size: 14px;
+    /* margin-top:0px; */
+    background-color: #F6F7FB;
+    color: black;
+}
+
+#table-row{
+    width:100%;
+    box-shadow: 2px 4px 4px  #F6F7FB;
+    background-color:white;
+   border-bottom:5px solid #F6F7FB;
+    /* border:1px solid black; */
+    /* display: flex; */
+    /* text-align: center; */
+   /* align-items: center; */
+}
+
+#anc-tag{
+    text-decoration: none;
+    color:#9B9B9B;
+    font-size: 14px;
+    /* font-weight: 400; */
+    }
+
+.tag-anc{
+    text-decoration: none;
+    color:#656565;
+font-size: 14px;
+font-weight: 400;
+}

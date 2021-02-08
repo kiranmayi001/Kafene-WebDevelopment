@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./userListingPage.css"/>
+</head>
+<body>
+
+    <topbar id="top-bar">
+
+        <div id="main-logo">
+            
+        <img id="logo" src="../assets/logo.58169365.png" alt=""/>
+        <h1>Kafene</h1>
+        </div>
+
+        <nav id="nav-items">
+            <span class="item"><a class="tag-anc" href="../orderListing/orderListing.html">orders</a></span>
+            <span class="item"><a class="tag-anc" href="../productPage/product.html">Product</a></span>
+            <span class="item active"><a class="tag-anc text" href="../userListingPage/userListingPage.html">Users</a></span>
+        </nav>
+
+        <p id="log-out"><a id="anc-tag" href="../LoginPage/LoginPage.html" >Logout</a></p>
+    </topbar>
+         
+         <main id="main-page">
+             <div id="main-wrapper">
+
+             
+
+            <section id="top-section">
+                <h1 id="heading">Users</h1>
+
+                <div id="input-reset">
+                    <input type="search" id="search-input" placeholder="search by name"/>
+                    <button id="reset-button">Reset</button>
+                </div>
+
+            </section>
+
+            <section id="bottom-section">
+
+                <div id="right-wrapper">
+                    <table id="table">
+                        <tr id="table-row" class="bold" >
+                            <td class=" bold id" >ID</td>
+                            <td class="bold product-name">User Avatar</td>
+                            <td class="bold product-brand">Full Name</td>
+                            <td class="bold expiry-date">DoB</td>
+                            <td class="bold unit-price">Gender</td>
+                            <td class="bold stock">Current Location</td>
+                        </tr>
+<!-- 
+                        <tr id="table-row" >
+                            <td class="  id" >ID</td>
+                            <td class=" product-name"><img class="img" src="" alt=""/></td>
+                            <td class=" product-brand">Full Name</td>
+                            <td class=" expiry-date">DoB</td>
+                            <td class=" unit-price">Gender</td>
+                            <td class=" stock">Current Location</td>
+                        </tr> -->
+                   </table>
+            
+
+               </div>
+            </section>
+         </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../userListingPage/userListingPage.js"></script>
+</body>
+</html>
