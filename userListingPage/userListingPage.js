@@ -65,18 +65,7 @@ for(let i=0;i<userListData.length;i++)
     
 }
 })
-// input
-// input.length<2 return
-// lowercase,
-// if(onputincludes firstname)
-{/* <tr id="table-row" >
-<td class="  id" >ID</td>
-<td class=" product-name"><img class="img" src="" alt=""/></td>
-<td class=" product-brand">Full Name</td>
-<td class=" expiry-date">DoB</td>
-<td class=" unit-price">Gender</td>
-<td class=" stock">Current Location</td>
-</tr> --> */}
+
 function createCards(data){
 var tableRow = document.createElement("tr")
 tableRow.id=data.id;
